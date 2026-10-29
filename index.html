@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H4VF7WNZRR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H4VF7WNZRR');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seekr – Search</title>
+<style>
+:root{--bg:#fff;--fg:#202124;--mut:#5f6368;--line:#dadce0;--card:#f8f9fa;--link:#1a0dab;--url:#188038;--pri:#1a73e8;--priText:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#202124;--fg:#e8eaed;--mut:#9aa0a6;--line:#3c4043;--card:#2d2e31;--link:#8ab4f8;--url:#81c995;--pri:#8ab4f8;--priText:#202124}}
+:root[data-theme="dark"]{--bg:#202124;--fg:#e8eaed;--mut:#9aa0a6;--line:#3c4043;--card:#2d2e31;--link:#8ab4f8;--url:#81c995;--pri:#8ab4f8;--priText:#202124}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;min-height:100vh}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+button{font:inherit;cursor:pointer}
+.btn{background:var(--card);color:var(--fg);border:1px solid var(--card);border-radius:6px;padding:10px 16px}
+.btn:hover{border-color:var(--line)}
+.pri{background:var(--pri);color:var(--priText);border-color:var(--pri)}
+.danger{color:#d93025}
+.top{display:flex;justify-content:flex-end;padding:14px 20px;gap:14px;font-size:14px}
+.home{display:flex;flex-direction:column;align-items:center;margin-top:12vh;padding:0 16px}
+.logo{font-size:clamp(48px,14vw,84px);font-weight:700;letter-spacing:-2px;margin:0 0 24px}
+.logo span:nth-child(5n+1){color:#4285f4}.logo span:nth-child(5n+2){color:#ea4335}.logo span:nth-child(5n+3){color:#fbbc05}.logo span:nth-child(5n+4){color:#34a853}.logo span:nth-child(5n){color:#ea4335}
+.sbox{display:flex;align-items:center;width:100%;max-width:580px;border:1px solid var(--line);border-radius:24px;padding:4px 16px;background:var(--bg)}
+.sbox:focus-within{box-shadow:0 1px 6px rgba(32,33,36,.28)}
+.sbox input{flex:1;border:0;outline:0;background:transparent;color:var(--fg);font-size:16px;padding:10px 8px;min-width:0}
+.btns{display:flex;gap:10px;margin-top:24px}
+.sug{position:relative;width:100%;max-width:580px}
+.sug div.list{position:absolute;left:0;right:0;top:4px;background:var(--bg);border:1px solid var(--line);border-radius:12px;z-index:5;overflow:hidden}
+.sug .it{padding:9px 20px;cursor:pointer}.sug .it:hover{background:var(--card)}
+.rhead{display:flex;align-items:center;gap:16px;padding:14px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.rhead .logo{font-size:30px;margin:0;cursor:pointer;letter-spacing:-1px}
+.rhead .sbox{max-width:600px}
+.res{max-width:680px;padding:16px 20px 60px}
+.stat{color:var(--mut);font-size:14px;margin-bottom:18px}
+.r{margin-bottom:26px}.r .u{color:var(--url);font-size:13px;word-break:break-all}.r h3{margin:2px 0 3px;font-size:20px;font-weight:400}.r p{margin:0;color:var(--mut);font-size:14px;line-height:1.5}
+.tag{display:inline-block;background:var(--card);border-radius:10px;font-size:12px;padding:1px 8px;margin-right:4px;color:var(--mut)}
+.foot{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));font-size:14px;color:var(--mut);display:flex;gap:18px}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 80px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0;border-bottom:1px solid var(--line)}
+.tab{background:none;border:0;border-bottom:3px solid transparent;padding:10px 14px;color:var(--mut)}
+.tab.on{color:var(--pri);border-color:var(--pri)}
+.card{background:var(--card);border-radius:10px;padding:16px;margin-bottom:14px}
+label{display:block;font-size:13px;color:var(--mut);margin:10px 0 4px}
+input.f,textarea.f{width:100%;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}.kpi b{font-size:28px;display:block}
+.login{max-width:340px;margin:16vh auto;text-align:center;padding:0 16px}
+.msg{font-size:13px;margin-top:8px;color:var(--url)}.err{color:#d93025}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+var KEY='seekr_v2',mem=null;
+function seed(){return{ver:3,name:'Seekr',pass:'admin123',total:0,queries:{},sites:[
+{id:1,title:'Wikipedia – The Free Encyclopedia',url:'https://www.wikipedia.org',desc:'Free online encyclopedia written by volunteers around the world.',tags:'encyclopedia knowledge reference'},
+{id:2,title:'MDN Web Docs',url:'https://developer.mozilla.org',desc:'Resources for developers: HTML, CSS and JavaScript documentation and tutorials.',tags:'html css javascript web developer'},
+{id:3,title:'GitHub',url:'https://github.com',desc:'Where developers host code, collaborate and build software together.',tags:'code git developer open source'},
+{id:4,title:'BBC News',url:'https://www.bbc.com/news',desc:'Latest world news, headlines and analysis from the BBC.',tags:'news world headlines'},
+{id:5,title:'YouTube',url:'https://www.youtube.com',desc:'Watch, share and upload videos, music and live streams.',tags:'video music streaming'},
+{id:6,title:'FIFA',url:'https://www.fifa.com',desc:'Official football news, tournaments, rankings and results.',tags:'football soccer world cup'},
+{id:7,title:'W3Schools',url:'https://www.w3schools.com',desc:'Free tutorials for learning HTML, CSS, JavaScript, Python and SQL.',tags:'learn html tutorial coding'},
+{id:8,title:'Stack Overflow',url:'https://stackoverflow.com',desc:'Questions and answers for programmers and developers.',tags:'code programming help developer errors'},
+{id:9,title:'Reddit',url:'https://www.reddit.com',desc:'Communities and discussions about almost every topic.',tags:'forum community social discussion'},
+{id:10,title:'Khan Academy',url:'https://www.khanacademy.org',desc:'Free lessons in math, science, history and more.',tags:'learn school math science education'},
+{id:11,title:'NASA',url:'https://www.nasa.gov',desc:'Space exploration news, missions, images and science.',tags:'space science moon mars rocket'},
+{id:12,title:'ESPN',url:'https://www.espn.com',desc:'Sports scores, news and highlights from around the world.',tags:'sports football basketball scores'},
+{id:13,title:'Transfermarkt',url:'https://www.transfermarkt.com',desc:'Football player values, transfers, clubs and statistics.',tags:'football transfers players messi ronaldo clubs'},
+{id:14,title:'Goal.com',url:'https://www.goal.com',desc:'Football news, live scores, fixtures and transfer rumours.',tags:'football soccer scores news messi ronaldo'},
+{id:15,title:'freeCodeCamp',url:'https://www.freecodecamp.org',desc:'Learn to code for free with lessons and projects.',tags:'learn code javascript web developer'},
+{id:16,title:'Python.org',url:'https://www.python.org',desc:'Official home of the Python programming language.',tags:'python programming code download'},
+{id:17,title:'Coursera',url:'https://www.coursera.org',desc:'Online courses from top universities and companies.',tags:'courses learn university certificate'},
+{id:18,title:'TED',url:'https://www.ted.com',desc:'Inspiring talks and ideas from experts around the world.',tags:'talks ideas video inspiration'},
+{id:19,title:'Spotify',url:'https://www.spotify.com',desc:'Stream music, podcasts and playlists.',tags:'music songs podcast streaming'},
+{id:20,title:'Google Maps',url:'https://maps.google.com',desc:'Maps, directions and places near you.',tags:'maps directions location travel'},
+{id:21,title:'Quran.com',url:'https://quran.com',desc:'Read and listen to the Quran with translations.',tags:'quran islam recitation surah'},
+{id:22,title:'National Geographic',url:'https://www.nationalgeographic.com',desc:'Stories and photos about nature, science, history and culture.',tags:'nature animals science travel history'},
+{id:23,title:'ChatGPT',url:'https://chatgpt.com',desc:'OpenAI’s AI assistant: ask questions, write, code and get answers in a chat.',tags:'chatgpt chat gpt openai ai assistant chatbot'},
+{id:24,title:'Claude',url:'https://claude.ai',desc:'Anthropic’s AI assistant for writing, coding, analysis and conversation.',tags:'claude anthropic ai assistant chatbot'},
+{id:25,title:'Google Gemini',url:'https://gemini.google.com',desc:'Google’s AI assistant for answers, writing, images and planning.',tags:'gemini google ai assistant chatbot bard'},
+{id:26,title:'Microsoft Copilot',url:'https://copilot.microsoft.com',desc:'Microsoft’s AI companion for search, writing and creating.',tags:'copilot microsoft ai assistant bing chatbot'},
+{id:27,title:'Perplexity',url:'https://www.perplexity.ai',desc:'AI search engine that answers questions with sources.',tags:'perplexity ai search answers'},
+{id:28,title:'DeepSeek',url:'https://chat.deepseek.com',desc:'AI chat assistant for questions, coding and reasoning.',tags:'deepseek ai chat assistant chatbot'},
+{id:29,title:'Canva',url:'https://www.canva.com',desc:'Design posters, logos, videos and social posts online.',tags:'canva design logo poster graphics'},
+{id:30,title:'Netflix',url:'https://www.netflix.com',desc:'Watch movies, series and shows online.',tags:'netflix movies series tv streaming'},
+{id:31,title:'Facebook',url:'https://www.facebook.com',desc:'Connect with friends, family and communities.',tags:'facebook social network friends'},
+{id:32,title:'Instagram',url:'https://www.instagram.com',desc:'Share photos, reels and stories.',tags:'instagram photos reels social'},
+{id:33,title:'TikTok',url:'https://www.tiktok.com',desc:'Short videos, trends and creators.',tags:'tiktok videos short trends social'},
+{id:34,title:'X (Twitter)',url:'https://x.com',desc:'News, posts and conversations in real time.',tags:'x twitter tweets social news'},
+{id:35,title:'WhatsApp',url:'https://www.whatsapp.com',desc:'Free messaging and calls for phones and desktop.',tags:'whatsapp chat messaging calls'},
+{id:36,title:'Gmail',url:'https://mail.google.com',desc:'Google’s free email service.',tags:'gmail email mail google'},
+{id:37,title:'Amazon',url:'https://www.amazon.com',desc:'Shop online for millions of products.',tags:'amazon shopping buy store'}]}}
+function load(){var d=null;try{var r=localStorage.getItem(KEY);if(r)d=JSON.parse(r)}catch(e){}d=d||mem||seed();if((d.ver||0)<3){seed().sites.forEach(function(s){if(!d.sites.some(function(x){return x.url===s.url})){s.id=Date.now()+Math.floor(Math.random()*1e6);d.sites.push(s)}});d.ver=3}return d}
+function save(){mem=db;try{localStorage.setItem(KEY,JSON.stringify(db))}catch(e){}}
+var db=load(),authed=false,tab='sites',editId=null,q='',notice='';
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function logo(n){return '<span>'+esc(n).split('').join('</span><span>')+'</span>'}
+function score(s,t){var h=(s.title+' '+s.url+' '+s.desc+' '+s.tags).toLowerCase(),sc=0;t.forEach(function(w){if(s.title.toLowerCase().indexOf(w)>-1)sc+=3;if(s.title.toLowerCase().split(/[^a-z0-9]+/).indexOf(w)>-1)sc+=5;if(s.tags.toLowerCase().indexOf(w)>-1)sc+=2;if(h.indexOf(w)>-1)sc+=1});return sc}
+function search(text){var t=text.toLowerCase().split(/\s+/).filter(Boolean);return db.sites.map(function(s){return{s:s,sc:score(s,t)}}).filter(function(x){return x.sc>0}).sort(function(a,b){return b.sc-a.sc}).map(function(x){return x.s})}
+function route(){document.title=db.name+(location.hash==='#admin'?' – Admin':' – Search');(location.hash==='#admin')?admin():(q?results():home())}
+function home(){
+document.getElementById('app').innerHTML='<div class="top"><a href="#admin">Admin</a></div><div class="home"><h1 class="logo">'+logo(db.name)+'</h1><div class="sug"><div class="sbox"><span>🔍</span><input id="q" placeholder="Search the index…" autocomplete="off" autofocus></div><div id="sg"></div></div><div class="btns"><button class="btn" id="go">'+esc(db.name)+' Search</button><button class="btn" id="lucky">I’m Feeling Lucky</button></div></div><div class="foot"><span>'+db.sites.length+' pages indexed</span></div>';
+bind()}
+function bind(){var i=document.getElementById('q');if(!i)return;i.value=q;
+i.onkeydown=function(e){if(e.key==='Enter')run(i.value)};
+i.oninput=function(){var v=i.value.trim().toLowerCase(),sg=document.getElementById('sg');if(!sg)return;if(!v){sg.innerHTML='';return}
+var seen={},l=[];db.sites.forEach(function(s){(s.title+' '+s.tags).toLowerCase().split(/\s+/).forEach(function(w){if(w.indexOf(v)===0&&!seen[w]&&l.length<5){seen[w]=1;l.push(w)}})});
+sg.innerHTML=l.length?'<div class="sug" style="position:relative"><div class="list">'+l.map(function(w){return '<div class="it" data-w="'+esc(w)+'">🔍 '+esc(w)+'</div>'}).join('')+'</div></div>':'';
+Array.prototype.forEach.call(sg.querySelectorAll('.it'),function(e){e.onclick=function(){run(e.getAttribute('data-w'))}})};
+var g=document.getElementById('go');if(g)g.onclick=function(){run(i.value)};
+var l=document.getElementById('lucky');if(l)l.onclick=function(){var r=search(i.value);if(r.length){count(i.value);window.open(r[0].url,'_blank')}else run(i.value)}}
+function count(t){t=t.trim().toLowerCase();if(!t)return;db.total++;db.queries[t]=(db.queries[t]||0)+1;save()}
+function run(t){t=t.trim();if(!t)return;q=t;count(t);results()}
+function webSearch(){var w=document.getElementById('web'),qq=q;if(!w)return;w.innerHTML='<div class="stat">Searching the web…</div>';
+fetch('https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=8&format=json&origin=*&srsearch='+encodeURIComponent(qq)).then(function(r){return r.json()}).then(function(d){if(qq!==q)return;var l=d.query.search;w.innerHTML=l.length?'<div class="stat">Web results (Wikipedia)</div>'+l.map(function(x){var u='https://en.wikipedia.org/wiki/'+encodeURIComponent(x.title.replace(/ /g,'_'));return '<div class="r"><div class="u">'+esc(u)+'</div><h3><a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(x.title)+'</a></h3><p>'+esc(x.snippet.replace(/<[^>]+>/g,''))+'…</p></div>'}).join(''):''}).catch(function(){w.innerHTML='<div class="stat">Live web results are blocked on this preview page. Host the downloaded file on your own site (for example GitHub Pages) to turn them on, or use the links below.</div>'})}
+function results(){var r=search(q),e=encodeURIComponent(q);
+document.getElementById('app').innerHTML='<div class="rhead"><h1 class="logo" id="hl">'+logo(db.name)+'</h1><div class="sbox" style="flex:1;min-width:200px"><input id="q" placeholder="Search…"><span id="sb" style="cursor:pointer">🔍</span></div><a href="#admin" style="font-size:14px">Admin</a></div><div class="res"><div class="stat">'+r.length+' result'+(r.length===1?'':'s')+' for “'+esc(q)+'”</div>'+
+(r.length?r.map(function(s){return '<div class="r"><div class="u">'+esc(s.url)+'</div><h3><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a></h3><p>'+esc(s.desc)+'</p><div style="margin-top:6px">'+s.tags.split(/\s+/).filter(Boolean).slice(0,4).map(function(t){return '<span class="tag">'+esc(t)+'</span>'}).join('')+'</div></div>'}).join(''):'<p>Nothing in the index matches “'+esc(q)+'”. Use the links below to search the wider web, or add it as a page in the admin panel.</p>')+
+'<div id="web"></div><div class="card"><b>Search the wider web:</b><br><br><a href="https://www.google.com/search?q='+e+'" target="_blank" rel="noopener">Google</a> · <a href="https://duckduckgo.com/?q='+e+'" target="_blank" rel="noopener">DuckDuckGo</a> · <a href="https://www.bing.com/search?q='+e+'" target="_blank" rel="noopener">Bing</a></div></div>';
+document.getElementById('hl').onclick=function(){q='';home()};bind();webSearch();
+document.getElementById('sb').onclick=function(){run(document.getElementById('q').value)}}
+function admin(){var a=document.getElementById('app');
+if(!authed){a.innerHTML='<div class="login"><h2>Admin login</h2><input class="f" id="pw" type="password" placeholder="Password"><p class="msg err" id="er"></p><button class="btn pri" id="li" style="width:100%">Sign in</button><p style="margin-top:20px"><a href="#">← Back to search</a></p><p style="font-size:12px;color:var(--mut)">Default password: admin123 – change it in Settings.</p></div>';
+var d=function(){if(document.getElementById('pw').value===db.pass){authed=true;admin()}else document.getElementById('er').textContent='Wrong password'};
+document.getElementById('li').onclick=d;document.getElementById('pw').onkeydown=function(e){if(e.key==='Enter')d()};return}
+var tabs=[['sites','Pages'],['add',editId?'Edit page':'Add page'],['stats','Statistics'],['set','Settings']];
+var h='<div class="wrap"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0">'+esc(db.name)+' Admin</h2><span><a href="#">View site</a> · <a href="#" id="lo">Log out</a></span></div><div class="tabs">'+tabs.map(function(t){return '<button class="tab'+(tab===t[0]?' on':'')+'" data-t="'+t[0]+'">'+t[1]+'</button>'}).join('')+'</div>';
+if(tab==='sites')h+='<div class="tw"><table><tr><th>Title</th><th>URL</th><th></th></tr>'+db.sites.map(function(s){return '<tr><td>'+esc(s.title)+'</td><td>'+esc(s.url)+'</td><td style="white-space:nowrap"><button class="btn" data-e="'+s.id+'">Edit</button> <button class="btn danger" data-d="'+s.id+'">Delete</button></td></tr>'}).join('')+'</table></div>';
+if(tab==='add'){var s=db.sites.filter(function(x){return x.id===editId})[0]||{title:'',url:'',desc:'',tags:''};
+h+='<div class="card"><label>Title</label><input class="f" id="ft" value="'+esc(s.title)+'"><label>URL (https://…)</label><input class="f" id="fu" value="'+esc(s.url)+'"><label>Description</label><textarea class="f" id="fd" rows="3">'+esc(s.desc)+'</textarea><label>Keywords (space separated)</label><input class="f" id="fk" value="'+esc(s.tags)+'"><p class="msg err" id="er"></p><button class="btn pri" id="fs">'+(editId?'Save changes':'Add to index')+'</button></div>'}
+if(tab==='stats'){var qs=Object.keys(db.queries).sort(function(a,b){return db.queries[b]-db.queries[a]}).slice(0,10);
+h+='<div class="kpis"><div class="card kpi"><b>'+db.total+'</b>Total searches</div><div class="card kpi"><b>'+db.sites.length+'</b>Pages indexed</div><div class="card kpi"><b>'+Object.keys(db.queries).length+'</b>Unique queries</div></div><div class="card"><b>Top searches</b><br>'+(qs.length?'<table>'+qs.map(function(k){return '<tr><td>'+esc(k)+'</td><td>'+db.queries[k]+'</td></tr>'}).join('')+'</table>':'<p>No searches yet.</p>')+'</div><p style="font-size:13px;color:var(--mut)">Stats are stored in this browser only.</p>'}
+if(tab==='set')h+='<div class="card"><label>Site name</label><input class="f" id="sn" value="'+esc(db.name)+'"><label>New admin password</label><input class="f" id="np" type="password" placeholder="Leave empty to keep current"><p class="msg">'+esc(notice)+'</p><button class="btn pri" id="ss">Save settings</button></div><div class="card"><b>Backup</b><p><button class="btn" id="ex">Export index (JSON)</button> <button class="btn danger" id="rs">Reset everything</button></p></div><p style="font-size:13px;color:var(--mut)">Note: this admin login runs in the browser, so it is a convenience lock, not strong security. For real security, add a server.</p>';
+a.innerHTML=h+'</div>';notice='';
+Array.prototype.forEach.call(a.querySelectorAll('.tab'),function(b){b.onclick=function(){tab=b.getAttribute('data-t');if(tab!=='add')editId=null;admin()}});
+document.getElementById('lo').onclick=function(e){e.preventDefault();authed=false;location.hash='';route()};
+Array.prototype.forEach.call(a.querySelectorAll('[data-e]'),function(b){b.onclick=function(){editId=+b.getAttribute('data-e');tab='add';admin()}});
+Array.prototype.forEach.call(a.querySelectorAll('[data-d]'),function(b){b.onclick=function(){if(confirm('Delete this page?')){db.sites=db.sites.filter(function(x){return x.id!==+b.getAttribute('data-d')});save();admin()}}});
+var fs=document.getElementById('fs');if(fs)fs.onclick=function(){var t=ft.value.trim(),u=fu.value.trim();if(!t||!/^https?:\/\//.test(u)){er.textContent='Title and a valid https:// URL are required';return}
+var o={title:t,url:u,desc:fd.value.trim(),tags:fk.value.trim()};if(editId){db.sites=db.sites.map(function(x){return x.id===editId?Object.assign({id:editId},o):x})}else{o.id=Date.now();db.sites.push(o)}
+editId=null;save();tab='sites';admin()};
+var ss=document.getElementById('ss');if(ss)ss.onclick=function(){db.name=sn.value.trim()||'Seekr';if(np.value)db.pass=np.value;save();notice='Saved ✓';document.title=db.name+' – Admin';admin()};
+var ex=document.getElementById('ex');if(ex)ex.onclick=function(){var b=new Blob([JSON.stringify(db.sites,null,2)],{type:'application/json'}),l=document.createElement('a');l.href=URL.createObjectURL(b);l.download='seekr-index.json';l.click()};
+var rs=document.getElementById('rs');if(rs)rs.onclick=function(){if(confirm('Reset all pages, stats and settings?')){db=seed();save();authed=false;location.hash='';route()}}}
+window.addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
